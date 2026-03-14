@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Kumar - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+        
+        body {
+            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            background-color: #fff;
+            color: #000;
+            line-height: 1.4;
+        }
+
+        .resume-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+        }
+
+        .header p {
+            font-size: 14px;
+            margin: 2px 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            font-size: 13px;
+            flex-wrap: wrap;
+        }
+
+        .contact-info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .section {
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 16px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-bottom: 1px solid #000;
+            margin-bottom: 10px;
+            padding-bottom: 3px;
+        }
+
+        .item {
+            margin-bottom: 12px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 4px;
+        }
+
+        .item-title {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .item-subtitle {
+            font-style: italic;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .item-date {
+            font-size: 13px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        
+        .item-link {
+            font-size: 13px;
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .item-link a {
+            color: #000;
+            text-decoration: underline;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 13px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            row-gap: 5px;
+            font-size: 13px;
+        }
+
+        .skills-label {
+            font-weight: 700;
+        }
+
+        .cert-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+        
+        .cert-left {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .cert-title {
+            font-weight: 700;
+            font-size: 13px;
+        }
+        
+        .cert-org {
+            font-style: italic;
+            font-size: 13px;
+        }
+
+        /* Print friendly styles */
+        @media print {
+            body {
+                padding: 0;
+                margin: 0;
+            }
+            .resume-container {
+                width: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <!-- HEADER -->
+        <div class="header">
+            <h1>AMIT KUMAR</h1>
+            <p>Sonbhadra, Uttar Pradesh 231210</p>
+            <div class="contact-info">
+                <span>📞 +91 8957602702</span>
+                <span>✉️ amitakhil001@gmail.com</span>
+                <span>🔗 linkedin.com/in/amit-akhil/</span>
+                <span>🐙 github.com/Amit123103</span>
+            </div>
+        </div>
+
+        <!-- INTERNSHIP -->
+        <div class="section">
+            <h2 class="section-title">Internship</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">AI-Powered Data Analysis Remote Internship</span> | 
+                        <span class="item-subtitle">Python, Pandas, EDA, Data Cleaning</span>
+                    </div>
+                    <div class="item-date">Jun 2025 - Jul 2025</div>
+                </div>
+                <div style="font-weight: 700; font-size: 14px; margin-bottom: 4px;">Rochester Institute of Technology (RIT) × Excelerate</div>
+                <ul>
+                    <li>Analyzed student engagement datasets to identify key factors affecting participation, completion rates, and dropout behaviour.</li>
+                    <li>Performed data cleaning, EDA, and visualization to extract actionable insights for improving student engagement.</li>
+                    <li>Applied basic machine learning models to predict student outcomes and engagement levels.</li>
+                    <li>Recognized for strong analytical thinking, teamwork, and problem-solving skills by program leadership.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Face and QR Recognition Attendance System</span> | 
+                        <span class="item-subtitle">Python, Flask / OpenCV, QR code, Face recognition</span>
+                    </div>
+                    <div class="item-date">Feb 2025 – May 2025</div>
+                </div>
+                <ul>
+                    <li>Designed and deployed a real-time Face Recognition Attendance System with end-to-end backend and frontend integration.</li>
+                    <li>Created a student portal and admin dashboard featuring attendance records, analytics, and management tools.</li>
+                    <li>Implemented Excel export and PDF report generation for attendance data and administrative reporting.</li>
+                    <li>Repository Link: <a href="https://amit123103.github.io/realtimefaceattendace/">https://amit123103.github.io/realtimefaceattendace/</a></li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Driver Drowsiness Detection System</span> | 
+                        <span class="item-subtitle">Python, OpenCV, Machine Learning</span>
+                    </div>
+                    <div class="item-date">Sep 2024 - Oct 2024</div>
+                </div>
+                <ul>
+                    <li>Built and implemented a machine learning-based driver drowsiness detection system using computer vision and deep learning.</li>
+                    <li>Applied CNN and facial landmark detection to classify drowsiness levels based on eye aspect ratio (EAR) and yawning patterns.</li>
+                    <li>Built an automated alert pipeline ensuring instant audio/visual warnings upon detecting fatigue signs to enhance road safety.</li>
+                    <li>Repository Link: <a href="https://github.com/Amit123103/DriverDrowsinessDetectionSystem">https://github.com/Amit123103/DriverDrowsinessDetectionSystem</a></li>
+                </ul>
+            </div>
+
+            <div class="item">
+                <div class="item-header">
+                    <div>
+                        <span class="item-title">Arial Monitoring Construction System</span> | 
+                        <span class="item-subtitle">Python, OpenCV, Deep Learning, Computer Vision</span>
+                    </div>
+                    <div class="item-date">Dec 2025 - Jan 2026</div>
+                </div>
+                <ul>
+                    <li>ML-based aerial monitoring system using drone imaging and computer vision for real-time construction site surveillance.</li>
+                    <li>Applied YOLO/CNN object detection to identify construction progress, equipment placement, and safety violations from aerial.</li>
+                    <li>Designed an automated pipeline to monitor sites, detect anomalies, and track construction progress ensuring safety compliance.</li>
+                    <li>Repository Link: <a href="https://amit123103.github.io/ArialMoniteringConstruction/">https://amit123103.github.io/ArialMoniteringConstruction/</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- CERTIFICATES -->
+        <div class="section">
+            <h2 class="section-title">Certificates / Certifications</h2>
+            
+            <div class="cert-item">
+                <div class="cert-left">
+                    <span class="cert-title">Prompt Engineering for ChatGPT-4 and Large Language</span>
+                    <span class="cert-org">Infosys — Certificate Link</span>
+                </div>
+                <div class="item-date">Aug 2025</div>
+            </div>
+            
+            <div class="cert-item">
+                <div class="cert-left">
+                    <span class="cert-title">Quantitative Research</span>
+                    <span class="cert-org">JPMorgan Chase & Co. — Certificate Link</span>
+                </div>
+                <div class="item-date">Jul 2025</div>
+            </div>
+
+            <div class="cert-item">
+                <div class="cert-left">
+                    <span class="cert-title">Python Programming Reliance Foundation Skilling Academy</span>
+                    <span class="cert-org">Reliance Foundation — Certificate Link</span>
+                </div>
+                <div class="item-date">Jul 2025</div>
+            </div>
+            
+            <div class="cert-item">
+                <div class="cert-left">
+                    <span class="cert-title">The Bits and Bytes of Computer Networking</span>
+                    <span class="cert-org">Coursera — Certificate Link</span>
+                </div>
+                <div class="item-date">Sep 2024</div>
+            </div>
+        </div>
+
+        <!-- SKILLS -->
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skills-label">Languages:</div>
+                <div>C++, C, Python, SQL, Java, JavaScript</div>
+                
+                <div class="skills-label">Technologies/Frameworks:</div>
+                <div>AWS, LM Studio Pandas, Node JS, Git, GitHub, Ubuntu, Docker, Matplotlib</div>
+                
+                <div class="skills-label">Domain Skills:</div>
+                <div>Data Structures and Algorithms, Problem-Solving, Responsive Web Design, Leadership, Teamwork</div>
+            </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="section">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Lovely Professional University</div>
+                    <div class="item-date">2023 – 2027</div>
+                </div>
+                <div class="item-header" style="margin-bottom: 0;">
+                    <div class="item-subtitle">Bachelor of Technology - Computer Science and Engineering — CGPA: 6.01</div>
+                    <div class="item-subtitle">Phagwara, Punjab</div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-header">
+                    <div class="item-title">Sonanchal Inter College</div>
+                    <div class="item-date">2020 – 2021</div>
+                </div>
+                <div class="item-header" style="margin-bottom: 0;">
+                    <div class="item-subtitle">12th — Percentage: 67%</div>
+                    <div class="item-subtitle">Sonbhadra, Uttar Pradesh</div>
+                </div>
+            </div>
+
+            <div class="item" style="margin-bottom: 0;">
+                <div class="item-header">
+                    <div class="item-title">Sonanchal Inter College</div>
+                    <div class="item-date">2018 – 2019</div>
+                </div>
+                <div class="item-header" style="margin-bottom: 0;">
+                    <div class="item-subtitle">10th — Percentage: 76%</div>
+                    <div class="item-subtitle">Sonbhadra, Uttar Pradesh</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // Auto print and save functionality when opened from 'Download'
+        window.onload = function() {
+            if (window.location.search.includes('print=true')) {
+                window.print();
+            }
+        }
+    </script>
+</body>
+</html>

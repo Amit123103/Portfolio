@@ -9,8 +9,13 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Enable CORS for all routes (so the frontend can reach the backend without CORS errors)
-app.use(cors());
+// Enable CORS for specific origins
+app.use(cors({
+  origin: ['https://amit123103.github.io', 'http://localhost:3000'],
+  methods: ['GET', 'POST', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

@@ -14,6 +14,11 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// Root route for health check (prevents "Cannot GET /" message)
+app.get('/', (req, res) => {
+  res.send('Amit Kumar Portfolio Server is Live and Operational! 🚀');
+});
+
 // Setup Multer to store uploaded videos in the 'uploads' folder dynamically
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
